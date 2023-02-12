@@ -1,16 +1,11 @@
 #!/bin/bash
+echo $@
 
-echo Timer started.......
-t=$1
-
-if !t: then
-  t=120
-fi
-
-
-for ((i=t;i>0;i--))
+for ((i=$1;i>0;i--))
 do
-  echo -ne "$i Seconds\r"
+  echo -ne "$i Seconds\033[0K\r"
   sleep 1s
 done
+
+echo Timer ended
 
