@@ -1,5 +1,4 @@
 #!/bin/bash
-echo $@
 
 for ((i=$1;i>0;i--))
 do
