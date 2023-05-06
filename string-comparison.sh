@@ -6,7 +6,7 @@ read -rp "Enter your last name: " lname
 if [ $fname == $lname ]
 then
 echo "your first and last name is same"
-elif [ fname < lname ]
+elif [ $fname \< $lname ]
 then 
 echo "your first name is "
 else 

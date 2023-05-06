@@ -5,7 +5,7 @@ echo Hello there,
 read -p "Username:" name 
 read -sp "Password:" Password
 echo
-echo "Username: $name\npassword:$Password"
+echo -e "Username: $name\npassword:$Password"
 
 read -p "Enter two numbers: " num1 num2
 echo The sum of two numbers is $(($num1+$num2))
